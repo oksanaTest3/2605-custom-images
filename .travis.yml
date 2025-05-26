@@ -6,8 +6,8 @@ jobs:
         use:
           name: 2605-image
       script:
-      	- echo "Checking if custom file exists"
-       - sudo cat /my-custom-dir/ok_file.txt
+        - echo "Checking if custom file exists"
+        - sudo cat /my-custom-dir/ok_file.txt
     - stage: "Tests"
       name: "Use custom image"
       vm:
