@@ -1,4 +1,7 @@
-#usage8
+os: linux
+language: generic
+dist: focal
+
 vm:
   use: 2605-image
 
