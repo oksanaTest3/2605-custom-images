@@ -1,9 +1,9 @@
 os: linux
-dist: xenial
+language: generic
+dist: focal
 
 vm:
-  use: 2605-image2
-
-script:
-  - echo "Checking if custom file exists"
-  - sudo cat /my-custom-dir/my_custom_file.txt
+  use:
+    name: 2605-image3
+  create:
+    name: 2605-image2
