@@ -1,15 +1,15 @@
 jobs:
   include:
-    - stage: "Tests"
-      name: "Create custom image3"
+    - stage: "Test"
+      name: "Use custom image1"
       vm:
         use:
           name: 2605-image
       script:
         - echo "Checking if custom file exists"
         - sudo cat /my-custom-dir/ok_file.txt
-    - stage: "Tests"
-      name: "Use custom image"
+    - stage: "Test"
+      name: "Use custom image2"
       vm:
         use:
           name: 2605-image2
