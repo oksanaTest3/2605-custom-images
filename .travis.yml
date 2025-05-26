@@ -14,5 +14,5 @@ jobs:
         use:
           name: 2305-image5
       script:
-      	- echo "Checking if custom file exists"
-       	- sudo cat /my-custom-dir/ok_file.txt
+        - echo "Checking if custom file exists"
+        - sudo cat /my-custom-dir/ok_file.txt
