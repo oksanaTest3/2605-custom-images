@@ -1,3 +1,6 @@
+os: linux
+dist: xenial
+
 vm:
   use: 2605-image
 
