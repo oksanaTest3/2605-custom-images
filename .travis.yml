@@ -2,7 +2,7 @@ os: linux
 dist: xenial
 
 vm:
-  use: 2605-image
+  use: 2605-image2
 
 script:
   - echo "Checking if custom file exists"
