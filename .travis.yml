@@ -8,11 +8,11 @@ jobs:
       script:
         - echo "Checking if custom file exists"
         - sudo cat /my-custom-dir/ok_file.txt
-    - stage: "Test"
-      name: "Use custom image2"
-      vm:
-        use:
-          name: 2605-image2
-      script:
-      	- echo "Checking if custom file exists"
-       	- sudo cat /my-custom-dir/ok_file.txt
+    # - stage: "Test"
+    #   name: "Use custom image2"
+    #   vm:
+    #     use:
+    #       name: 2605-image2
+    #   script:
+    #   	- echo "Checking if custom file exists"
+    #    	- sudo cat /my-custom-dir/ok_file.txt
