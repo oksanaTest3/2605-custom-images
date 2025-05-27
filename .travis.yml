@@ -2,7 +2,8 @@ jobs:
   include:
     - stage: create image
       vm:
-        create: 2705-image6
+        create: 
+          name: 2705-image6
       script:
         - exit 1
 
