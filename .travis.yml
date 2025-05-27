@@ -1,15 +1,16 @@
 jobs:
   include:
-    - stage: create image
-      os: linux
-      dist: focal
-      language: generic
+    - stage: "Test"
+      name: "Use custom image test1"
       vm:
-        create: 
-          name: 2705-image7
-
-    - stage: use custom image
-      vm:
-        use: 2705-image7
+        use:
+          name: 2705-image
       script:
-        - echo "Running job with custom image"
+        - echo "Using ..."
+    - stage: "Test"
+      name: "Use custom image test2"
+      vm:
+        use:
+          name: 2705-image8 #non existing image
+      script:
+        - echo "Using ..."
