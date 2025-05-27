@@ -3,9 +3,10 @@ jobs:
     - stage: create image
       os: linux
       dist: focal
+      language: general
       vm:
         create:
-          name: 2705-image3
+          name: 2705-image4
       before_install:
         - sudo apt-get -y install libxml2-dev
       addons:
