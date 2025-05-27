@@ -3,11 +3,8 @@ jobs:
     - stage: create image
       vm:
         create: 2705-image6
-      before_install:
-        - sudo apt-get -y install libxml2-dev
-      addons:
-        apt:
-          update: true
+      script:
+        - exit 1
 
     - stage: use custom image
       vm:
