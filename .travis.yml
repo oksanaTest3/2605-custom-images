@@ -1,14 +1,11 @@
-os: linux
-dist: focal
-language: generic
-
 jobs:
   include:
     - stage: create image
+      os: linux
+      dist: focal
       vm:
-        use: base-image
         create:
-          name: 2705-image2
+          name: 2705-image3
       before_install:
         - sudo apt-get -y install libxml2-dev
       addons:
@@ -17,6 +14,6 @@ jobs:
 
     - stage: use custom image
       vm:
-        use: 2705-image
+        use: 2705-image #existing image
       script:
         - echo "Running job with custom image"
