@@ -1,11 +1,7 @@
 jobs:
   include:
     - stage: create image
-      os: linux
-      dist: focal
-      language: generic
       vm:
-        use: 2705-image6
         create: 2705-image6
       before_install:
         - sudo apt-get -y install libxml2-dev
